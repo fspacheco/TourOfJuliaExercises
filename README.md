@@ -7,3 +7,13 @@
 Use this template and edit the source code to implement the functions `problem_1`, `problem_2`, ..., `problem_10`, which should return the solution of the first ten problems listed on [Project Euler](https://projecteuler.net). Use the most idiomatic Julia you can; you are encouraged to show-off all the features you like!
 
 The solutions will be checked using CI via GitHub actions. You can also document your code using docstrings; the documentation will be generated automatically.
+
+# How to activate
+
+Open `julia`, then change to package mode with `]` and `activate .`
+
+One can also write code inside a Pluto environment with `import Pluto; Pluto.run()`
+
+# To run the tests
+
+In the package mode `]`, run `test`

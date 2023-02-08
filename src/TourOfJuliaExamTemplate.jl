@@ -4,7 +4,12 @@ solutions = [233168, 4613732, 6857, 906609, 232792560, 25164150, 104743, 2351462
 export solutions
 
 # Write your package code here.
+include("my_solutions_euler.jl")
+
 for (n, sol) in enumerate(solutions)
+    if n==1
+        continue
+    end
     func = Symbol("problem_", n)
     @eval begin
         """
