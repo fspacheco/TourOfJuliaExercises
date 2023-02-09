@@ -2,7 +2,7 @@
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://stefanocampanella.github.io/TourOfJuliaExamTemplate.jl/stable/)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://stefanocampanella.github.io/TourOfJuliaExamTemplate.jl/dev/)
-[![Build Status](https://github.com/fspacheco/TourOfJuliaExercises/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/fspacheco/TourOfJuliaExercises/actions/workflows/CI.yml?query=branch%3Amaster)
+[![Build Status](https://github.com/fspacheco/TourOfJuliaExercises/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/fspacheco/TourOfJuliaExercises/actions/workflows/CI.yml?query=branch%3Amain)
 
 Use this template and edit the source code to implement the functions `problem_1`, `problem_2`, ..., `problem_10`, which should return the solution of the first ten problems listed on [Project Euler](https://projecteuler.net). Use the most idiomatic Julia you can; you are encouraged to show-off all the features you like!
 
