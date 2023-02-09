@@ -7,7 +7,7 @@ export solutions
 include("my_solutions_euler.jl")
 
 for (n, sol) in enumerate(solutions)
-    if n==1
+    if n<3
         continue
     end
     func = Symbol("problem_", n)
@@ -16,7 +16,7 @@ for (n, sol) in enumerate(solutions)
         This is the docstring for $($func), which solves the $($n) problem on [Project Euler](https://projecteuler.net)
         """
         function $func()
-            $sol
+            -1#$sol
         end
         
         export $func

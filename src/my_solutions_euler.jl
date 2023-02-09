@@ -6,8 +6,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 
 """
-function problem_1()
-    max = 1000
+function problem_1(max=1000)
     sum = 0
     a = collect(1:max-1)
     for i in a
@@ -17,6 +16,35 @@ function problem_1()
     end
     return sum
 end
+
+function problem_1B(max=1000)
+    sum = 0
+    i=1
+    while i<max
+        if i%3==0 || i%5==0
+            sum = sum + i
+        end
+        i = i+1
+    end
+    return sum
+end
+
+function problem_1C(max=1000)
+    sum = 0.0
+    i=1
+    while i<max
+        if i%3==0 || i%5==0
+            sum = sum + i
+        end
+        i = i+1
+    end
+    return sum
+end
+
+# Compare with numpy
+#def problem_1(max=1000):
+#    x=np.array(range(1,max)).astype(np.int64)
+#    return np.sum(x[np.logical_or(x%3==0,x%5==0)])
 
 """
 Problem 2: Even Fibonacci numbers
@@ -44,6 +72,18 @@ function problem_2()
     end
     return sum
 end
+
+"""
+Problem 3: Largest prime factor
+
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+"""
+function problem_3()
+    return -1
+end
     
 export problem_1
 export problem_2
+export problem_3
